@@ -181,6 +181,8 @@
             this.listView.Size = new System.Drawing.Size(507, 308);
             this.listView.TabIndex = 0;
             this.listView.UseCompatibleStateImageBehavior = false;
+            this.listView.Columns.Add("");
+            this.listView.Columns[0].Width = 2000;
             this.listView.View = System.Windows.Forms.View.Details;
             // 
             // MessengerForm
