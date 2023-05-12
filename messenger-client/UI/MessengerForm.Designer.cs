@@ -30,7 +30,6 @@
         {
             this.messageInputField = new System.Windows.Forms.TextBox();
             this.sendButton = new System.Windows.Forms.Button();
-            this.listView = new System.Windows.Forms.ListView();
             this.usernameField = new System.Windows.Forms.TextBox();
             this.usernameLabel = new System.Windows.Forms.Label();
             this.passwordLabel = new System.Windows.Forms.Label();
@@ -40,6 +39,7 @@
             this.emptyViewLabel = new System.Windows.Forms.Label();
             this.deleteAccountButton = new System.Windows.Forms.Button();
             this.logoutButton = new System.Windows.Forms.Button();
+            this.listView = new MaterialSkin.Controls.MaterialListView();
             this.SuspendLayout();
             // 
             // messageInputField
@@ -47,10 +47,10 @@
             this.messageInputField.AllowDrop = true;
             this.messageInputField.Enabled = false;
             this.messageInputField.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.messageInputField.Location = new System.Drawing.Point(13, 400);
+            this.messageInputField.Location = new System.Drawing.Point(62, 451);
             this.messageInputField.Multiline = true;
             this.messageInputField.Name = "messageInputField";
-            this.messageInputField.Size = new System.Drawing.Size(694, 38);
+            this.messageInputField.Size = new System.Drawing.Size(694, 91);
             this.messageInputField.TabIndex = 1;
             this.messageInputField.Visible = false;
             this.messageInputField.TextChanged += new System.EventHandler(this.OnMessageTextChanged);
@@ -58,7 +58,7 @@
             // sendButton
             // 
             this.sendButton.Enabled = false;
-            this.sendButton.Location = new System.Drawing.Point(713, 400);
+            this.sendButton.Location = new System.Drawing.Point(775, 474);
             this.sendButton.Name = "sendButton";
             this.sendButton.Size = new System.Drawing.Size(75, 38);
             this.sendButton.TabIndex = 2;
@@ -67,27 +67,10 @@
             this.sendButton.Visible = false;
             this.sendButton.Click += new System.EventHandler(this.OnSendButtonClicked);
             // 
-            // listView
-            // 
-            this.listView.AllowColumnReorder = true;
-            this.listView.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.listView.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listView.ForeColor = System.Drawing.SystemColors.Window;
-            this.listView.HideSelection = false;
-            this.listView.Location = new System.Drawing.Point(265, 12);
-            this.listView.Name = "listView";
-            this.listView.Size = new System.Drawing.Size(523, 382);
-            this.listView.TabIndex = 0;
-            this.listView.UseCompatibleStateImageBehavior = false;
-            this.listView.View = System.Windows.Forms.View.Details;
-            this.listView.Columns.Add("");
-            this.listView.Columns[0].Width = 1000;
-           
-            // 
             // usernameField
             // 
             this.usernameField.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.usernameField.Location = new System.Drawing.Point(71, 54);
+            this.usernameField.Location = new System.Drawing.Point(71, 116);
             this.usernameField.Name = "usernameField";
             this.usernameField.Size = new System.Drawing.Size(188, 24);
             this.usernameField.TabIndex = 3;
@@ -96,7 +79,7 @@
             // usernameLabel
             // 
             this.usernameLabel.AutoSize = true;
-            this.usernameLabel.Location = new System.Drawing.Point(12, 61);
+            this.usernameLabel.Location = new System.Drawing.Point(12, 123);
             this.usernameLabel.Name = "usernameLabel";
             this.usernameLabel.Size = new System.Drawing.Size(35, 13);
             this.usernameLabel.TabIndex = 4;
@@ -105,7 +88,7 @@
             // passwordLabel
             // 
             this.passwordLabel.AutoSize = true;
-            this.passwordLabel.Location = new System.Drawing.Point(12, 99);
+            this.passwordLabel.Location = new System.Drawing.Point(12, 168);
             this.passwordLabel.Name = "passwordLabel";
             this.passwordLabel.Size = new System.Drawing.Size(53, 13);
             this.passwordLabel.TabIndex = 5;
@@ -114,18 +97,18 @@
             // passwordField
             // 
             this.passwordField.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.passwordField.Location = new System.Drawing.Point(71, 92);
+            this.passwordField.Location = new System.Drawing.Point(88, 161);
             this.passwordField.MaxLength = 64;
             this.passwordField.Name = "passwordField";
             this.passwordField.PasswordChar = '*';
-            this.passwordField.Size = new System.Drawing.Size(188, 24);
+            this.passwordField.Size = new System.Drawing.Size(171, 24);
             this.passwordField.TabIndex = 6;
             this.passwordField.TextChanged += new System.EventHandler(this.OnCredentialsTextChanged);
             // 
             // registerButton
             // 
             this.registerButton.Enabled = false;
-            this.registerButton.Location = new System.Drawing.Point(168, 150);
+            this.registerButton.Location = new System.Drawing.Point(171, 271);
             this.registerButton.Name = "registerButton";
             this.registerButton.Size = new System.Drawing.Size(75, 27);
             this.registerButton.TabIndex = 7;
@@ -136,7 +119,7 @@
             // loginButton
             // 
             this.loginButton.Enabled = false;
-            this.loginButton.Location = new System.Drawing.Point(71, 150);
+            this.loginButton.Location = new System.Drawing.Point(52, 271);
             this.loginButton.Name = "loginButton";
             this.loginButton.Size = new System.Drawing.Size(75, 27);
             this.loginButton.TabIndex = 8;
@@ -150,7 +133,7 @@
             this.emptyViewLabel.BackColor = System.Drawing.SystemColors.Window;
             this.emptyViewLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.emptyViewLabel.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.emptyViewLabel.Location = new System.Drawing.Point(276, 189);
+            this.emptyViewLabel.Location = new System.Drawing.Point(376, 234);
             this.emptyViewLabel.Name = "emptyViewLabel";
             this.emptyViewLabel.Size = new System.Drawing.Size(512, 29);
             this.emptyViewLabel.TabIndex = 9;
@@ -158,7 +141,7 @@
             // 
             // deleteAccountButton
             // 
-            this.deleteAccountButton.Location = new System.Drawing.Point(71, 191);
+            this.deleteAccountButton.Location = new System.Drawing.Point(71, 343);
             this.deleteAccountButton.Name = "deleteAccountButton";
             this.deleteAccountButton.Size = new System.Drawing.Size(147, 32);
             this.deleteAccountButton.TabIndex = 10;
@@ -169,7 +152,7 @@
             // 
             // logoutButton
             // 
-            this.logoutButton.Location = new System.Drawing.Point(71, 122);
+            this.logoutButton.Location = new System.Drawing.Point(71, 210);
             this.logoutButton.Name = "logoutButton";
             this.logoutButton.Size = new System.Drawing.Size(147, 32);
             this.logoutButton.TabIndex = 11;
@@ -178,12 +161,34 @@
             this.logoutButton.Visible = false;
             this.logoutButton.Click += new System.EventHandler(this.OnLogoutButtonClicked);
             // 
+            // listView
+            // 
+            this.listView.AllowColumnReorder = true;
+            this.listView.AutoSizeTable = false;
+            this.listView.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.listView.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.listView.Depth = 0;
+            this.listView.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listView.ForeColor = System.Drawing.Color.Maroon;
+            this.listView.FullRowSelect = true;
+            this.listView.HideSelection = false;
+            this.listView.Location = new System.Drawing.Point(283, 116);
+            this.listView.MinimumSize = new System.Drawing.Size(200, 100);
+            this.listView.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.listView.MouseState = MaterialSkin.MouseState.OUT;
+            this.listView.Name = "listView";
+            this.listView.OwnerDraw = true;
+            this.listView.Size = new System.Drawing.Size(507, 308);
+            this.listView.TabIndex = 0;
+            this.listView.UseCompatibleStateImageBehavior = false;
+            this.listView.View = System.Windows.Forms.View.Details;
+            // 
             // MessengerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GrayText;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(941, 567);
             this.Controls.Add(this.messageInputField);
             this.Controls.Add(this.logoutButton);
             this.Controls.Add(this.deleteAccountButton);
@@ -208,7 +213,6 @@
         #endregion
         public System.Windows.Forms.TextBox messageInputField;
         public System.Windows.Forms.Button sendButton;
-        private System.Windows.Forms.ListView listView;
         private System.Windows.Forms.TextBox usernameField;
         private System.Windows.Forms.Label usernameLabel;
         private System.Windows.Forms.Label passwordLabel;
@@ -218,6 +222,7 @@
         private System.Windows.Forms.Label emptyViewLabel;
         private System.Windows.Forms.Button deleteAccountButton;
         private System.Windows.Forms.Button logoutButton;
+        private MaterialSkin.Controls.MaterialListView listView;
     }
 }
 

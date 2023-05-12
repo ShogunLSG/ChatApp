@@ -10,11 +10,13 @@ using System.Linq;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
 using System.Globalization;
+using MaterialSkin.Controls;
+using MaterialSkin;
 
 namespace Messenger
 {
 
-    public partial class MessengerForm : Form
+    public partial class MessengerForm : MaterialForm
     {
 
         private static readonly String SCREEN_CAPTURE_OUTPUT = "screen.jpg";
@@ -31,6 +33,11 @@ namespace Messenger
         public MessengerForm()
         {
             InitializeComponent();
+
+            var materialSkinManager = MaterialSkinManager.Instance;
+            materialSkinManager.AddFormToManage(this);
+            materialSkinManager.Theme = MaterialSkinManager.Themes.DARK;
+            materialSkinManager.ColorScheme = new ColorScheme(Primary.BlueGrey800, Primary.BlueGrey900, Primary.BlueGrey500, Accent.LightBlue200, TextShade.WHITE); 
             GetAppConfig();
         }
 
@@ -298,7 +305,5 @@ namespace Messenger
                 bitmap.Save(SCREEN_CAPTURE_OUTPUT, ImageFormat.Jpeg);
             }
         }
-
-      
     }
 }
