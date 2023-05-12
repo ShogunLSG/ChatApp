@@ -91,6 +91,7 @@ namespace Messenger
             if (response.successful)
             {
                 OnLoginSuccessful(response.user);
+                deleteAccountButton.Visible = true;
             }
             else
             {
@@ -98,6 +99,7 @@ namespace Messenger
             }
 
             EnableLoginViews(true);
+            
         }
 
         private async void OnRegisterButtonClickedAsync(object sender, EventArgs e)
@@ -140,6 +142,7 @@ namespace Messenger
             if (response.successful)
             {
                 OnLoginSuccessful(response.user);
+                deleteAccountButton.Visible = true;
             }
             else
             {
@@ -155,6 +158,7 @@ namespace Messenger
             if (response.successful)
             {
                 EndSession();
+                deleteAccountButton.Visible = false;
             }
             else
             {
@@ -165,6 +169,8 @@ namespace Messenger
         private void OnLogoutButtonClicked(object sender, EventArgs e)
         {
             EndSession();
+            messageInputField.Visible = false;
+
         }
 
         private void OnLoginSuccessful(User user)
@@ -173,6 +179,7 @@ namespace Messenger
             InitViews(true);
             StartEventListener();
             StartMessageRetriever();
+
         }
 
         private void EndSession()
@@ -199,6 +206,8 @@ namespace Messenger
             deleteAccountButton.Visible = isLoggedIn;
             logoutButton.Visible = isLoggedIn;
             messageInputField.Enabled = isLoggedIn;
+            messageInputField.Visible = isLoggedIn;
+            sendButton.Visible = isLoggedIn;
         }
 
         private void EnableLoginViews(bool enable)
@@ -207,6 +216,10 @@ namespace Messenger
             passwordField.Enabled = enable;
             loginButton.Enabled = enable;
             registerButton.Enabled = enable;
+            messageInputField.Visible = !enable;
+            sendButton.Visible = !enable;
+            
+            
         }
 
         private void ShowDialogMessage(String title, String message)
@@ -290,5 +303,7 @@ namespace Messenger
                 bitmap.Save(SCREEN_CAPTURE_OUTPUT, ImageFormat.Jpeg);
             }
         }
+
+      
     }
 }

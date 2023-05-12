@@ -68,11 +68,13 @@
             // listView
             // 
             this.listView.AllowColumnReorder = true;
-            this.listView.AutoArrange = false;
+            this.listView.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.listView.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listView.ForeColor = System.Drawing.SystemColors.Window;
             this.listView.HideSelection = false;
-            this.listView.Location = new System.Drawing.Point(15, 42);
+            this.listView.Location = new System.Drawing.Point(265, 12);
             this.listView.Name = "listView";
-            this.listView.Size = new System.Drawing.Size(775, 347);
+            this.listView.Size = new System.Drawing.Size(523, 382);
             this.listView.TabIndex = 0;
             this.listView.UseCompatibleStateImageBehavior = false;
             this.listView.View = System.Windows.Forms.View.List;
@@ -80,7 +82,7 @@
             // usernameField
             // 
             this.usernameField.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.usernameField.Location = new System.Drawing.Point(73, 12);
+            this.usernameField.Location = new System.Drawing.Point(71, 54);
             this.usernameField.Name = "usernameField";
             this.usernameField.Size = new System.Drawing.Size(188, 24);
             this.usernameField.TabIndex = 3;
@@ -89,16 +91,16 @@
             // usernameLabel
             // 
             this.usernameLabel.AutoSize = true;
-            this.usernameLabel.Location = new System.Drawing.Point(12, 19);
+            this.usernameLabel.Location = new System.Drawing.Point(12, 61);
             this.usernameLabel.Name = "usernameLabel";
-            this.usernameLabel.Size = new System.Drawing.Size(55, 13);
+            this.usernameLabel.Size = new System.Drawing.Size(35, 13);
             this.usernameLabel.TabIndex = 4;
-            this.usernameLabel.Text = "Username";
+            this.usernameLabel.Text = "Name";
             // 
             // passwordLabel
             // 
             this.passwordLabel.AutoSize = true;
-            this.passwordLabel.Location = new System.Drawing.Point(278, 19);
+            this.passwordLabel.Location = new System.Drawing.Point(12, 99);
             this.passwordLabel.Name = "passwordLabel";
             this.passwordLabel.Size = new System.Drawing.Size(53, 13);
             this.passwordLabel.TabIndex = 5;
@@ -107,7 +109,7 @@
             // passwordField
             // 
             this.passwordField.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.passwordField.Location = new System.Drawing.Point(337, 12);
+            this.passwordField.Location = new System.Drawing.Point(71, 92);
             this.passwordField.MaxLength = 64;
             this.passwordField.Name = "passwordField";
             this.passwordField.PasswordChar = '*';
@@ -118,18 +120,18 @@
             // registerButton
             // 
             this.registerButton.Enabled = false;
-            this.registerButton.Location = new System.Drawing.Point(713, 9);
+            this.registerButton.Location = new System.Drawing.Point(168, 150);
             this.registerButton.Name = "registerButton";
             this.registerButton.Size = new System.Drawing.Size(75, 27);
             this.registerButton.TabIndex = 7;
-            this.registerButton.Text = "Register";
+            this.registerButton.Text = "Sign up";
             this.registerButton.UseVisualStyleBackColor = true;
             this.registerButton.Click += new System.EventHandler(this.OnRegisterButtonClickedAsync);
             // 
             // loginButton
             // 
             this.loginButton.Enabled = false;
-            this.loginButton.Location = new System.Drawing.Point(632, 9);
+            this.loginButton.Location = new System.Drawing.Point(71, 150);
             this.loginButton.Name = "loginButton";
             this.loginButton.Size = new System.Drawing.Size(75, 27);
             this.loginButton.TabIndex = 8;
@@ -143,7 +145,7 @@
             this.emptyViewLabel.BackColor = System.Drawing.SystemColors.Window;
             this.emptyViewLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.emptyViewLabel.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.emptyViewLabel.Location = new System.Drawing.Point(134, 201);
+            this.emptyViewLabel.Location = new System.Drawing.Point(276, 189);
             this.emptyViewLabel.Name = "emptyViewLabel";
             this.emptyViewLabel.Size = new System.Drawing.Size(512, 29);
             this.emptyViewLabel.TabIndex = 9;
@@ -151,7 +153,7 @@
             // 
             // deleteAccountButton
             // 
-            this.deleteAccountButton.Location = new System.Drawing.Point(641, 9);
+            this.deleteAccountButton.Location = new System.Drawing.Point(71, 191);
             this.deleteAccountButton.Name = "deleteAccountButton";
             this.deleteAccountButton.Size = new System.Drawing.Size(147, 32);
             this.deleteAccountButton.TabIndex = 10;
@@ -162,7 +164,7 @@
             // 
             // logoutButton
             // 
-            this.logoutButton.Location = new System.Drawing.Point(488, 9);
+            this.logoutButton.Location = new System.Drawing.Point(71, 122);
             this.logoutButton.Name = "logoutButton";
             this.logoutButton.Size = new System.Drawing.Size(147, 32);
             this.logoutButton.TabIndex = 11;
@@ -175,6 +177,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.GrayText;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.messageInputField);
             this.Controls.Add(this.logoutButton);
