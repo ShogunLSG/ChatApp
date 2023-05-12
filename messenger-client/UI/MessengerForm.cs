@@ -169,7 +169,6 @@ namespace Messenger
         private void OnLogoutButtonClicked(object sender, EventArgs e)
         {
             EndSession();
-            messageInputField.Visible = false;
 
         }
 
@@ -216,10 +215,6 @@ namespace Messenger
             passwordField.Enabled = enable;
             loginButton.Enabled = enable;
             registerButton.Enabled = enable;
-            messageInputField.Visible = !enable;
-            sendButton.Visible = !enable;
-            
-            
         }
 
         private void ShowDialogMessage(String title, String message)

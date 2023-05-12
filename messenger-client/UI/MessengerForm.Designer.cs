@@ -48,21 +48,23 @@
             this.messageInputField.Enabled = false;
             this.messageInputField.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.messageInputField.Location = new System.Drawing.Point(13, 400);
+            this.messageInputField.Multiline = true;
             this.messageInputField.Name = "messageInputField";
-            this.messageInputField.Size = new System.Drawing.Size(694, 35);
+            this.messageInputField.Size = new System.Drawing.Size(694, 38);
             this.messageInputField.TabIndex = 1;
+            this.messageInputField.Visible = false;
             this.messageInputField.TextChanged += new System.EventHandler(this.OnMessageTextChanged);
             // 
             // sendButton
             // 
             this.sendButton.Enabled = false;
-            this.sendButton.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.sendButton.Location = new System.Drawing.Point(713, 400);
             this.sendButton.Name = "sendButton";
-            this.sendButton.Size = new System.Drawing.Size(75, 35);
+            this.sendButton.Size = new System.Drawing.Size(75, 38);
             this.sendButton.TabIndex = 2;
             this.sendButton.Text = "Send";
             this.sendButton.UseVisualStyleBackColor = true;
+            this.sendButton.Visible = false;
             this.sendButton.Click += new System.EventHandler(this.OnSendButtonClicked);
             // 
             // listView
@@ -77,7 +79,10 @@
             this.listView.Size = new System.Drawing.Size(523, 382);
             this.listView.TabIndex = 0;
             this.listView.UseCompatibleStateImageBehavior = false;
-            this.listView.View = System.Windows.Forms.View.List;
+            this.listView.View = System.Windows.Forms.View.Details;
+            this.listView.Columns.Add("");
+            this.listView.Columns[0].Width = 1000;
+           
             // 
             // usernameField
             // 
