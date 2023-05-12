@@ -1,0 +1,24 @@
+messenger:
+  media:
+    capture-path: /opt/messenger/media/capture
+spring:
+  datasource:
+    password: messenger
+    url: jdbc:mysql://localhost:3306/messenger
+    username: messenger
+  jpa:
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate:
+    show-sql: false
+server:
+  port: 7000
+org:
+  quartz:
+    scheduler:
+      instanceName: Messenger
+      instanceId: AUTO
+      skipUpdateCheck: true
+screen-capture-event-publish-job:
+  frequency: 300000

@@ -1,0 +1,28 @@
+C:\Users\Ampfarisaho\Development\Messenger\bin\Debug\Messenger.exe.config
+C:\Users\Ampfarisaho\Development\Messenger\bin\Debug\Messenger.exe
+C:\Users\Ampfarisaho\Development\Messenger\bin\Debug\Messenger.pdb
+C:\Users\Ampfarisaho\Development\Messenger\obj\Debug\Messenger.csproj.AssemblyReference.cache
+C:\Users\Ampfarisaho\Development\Messenger\obj\Debug\Messenger.csproj.SuggestedBindingRedirects.cache
+C:\Users\Ampfarisaho\Development\Messenger\obj\Debug\Messenger.Properties.Resources.resources
+C:\Users\Ampfarisaho\Development\Messenger\obj\Debug\Messenger.csproj.GenerateResource.cache
+C:\Users\Ampfarisaho\Development\Messenger\obj\Debug\Messenger.csproj.CoreCompileInputs.cache
+C:\Users\Ampfarisaho\Development\Messenger\obj\Debug\Messenger.exe
+C:\Users\Ampfarisaho\Development\Messenger\obj\Debug\Messenger.pdb
+C:\Users\Ampfarisaho\Development\Messenger\obj\Debug\Messenger.MessengerForm.resources
+C:\Users\Ampfarisaho\Development\Messenger\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Ampfarisaho\Development\Messenger\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Ampfarisaho\Development\Messenger\obj\Debug\Messenger.csproj.CopyComplete
+C:\Users\lesegomat\OneDrive\Adv Dip Computer Science\SFG\Assignment 2\Source Code\messenger-client\bin\Debug\Messenger.exe.config
+C:\Users\lesegomat\OneDrive\Adv Dip Computer Science\SFG\Assignment 2\Source Code\messenger-client\bin\Debug\Messenger.exe
+C:\Users\lesegomat\OneDrive\Adv Dip Computer Science\SFG\Assignment 2\Source Code\messenger-client\bin\Debug\Messenger.pdb
+C:\Users\lesegomat\OneDrive\Adv Dip Computer Science\SFG\Assignment 2\Source Code\messenger-client\bin\Debug\Newtonsoft.Json.dll
+C:\Users\lesegomat\OneDrive\Adv Dip Computer Science\SFG\Assignment 2\Source Code\messenger-client\bin\Debug\Newtonsoft.Json.xml
+C:\Users\lesegomat\OneDrive\Adv Dip Computer Science\SFG\Assignment 2\Source Code\messenger-client\obj\Debug\Messenger.csproj.AssemblyReference.cache
+C:\Users\lesegomat\OneDrive\Adv Dip Computer Science\SFG\Assignment 2\Source Code\messenger-client\obj\Debug\Messenger.csproj.SuggestedBindingRedirects.cache
+C:\Users\lesegomat\OneDrive\Adv Dip Computer Science\SFG\Assignment 2\Source Code\messenger-client\obj\Debug\Messenger.MessengerForm.resources
+C:\Users\lesegomat\OneDrive\Adv Dip Computer Science\SFG\Assignment 2\Source Code\messenger-client\obj\Debug\Messenger.Properties.Resources.resources
+C:\Users\lesegomat\OneDrive\Adv Dip Computer Science\SFG\Assignment 2\Source Code\messenger-client\obj\Debug\Messenger.csproj.GenerateResource.cache
+C:\Users\lesegomat\OneDrive\Adv Dip Computer Science\SFG\Assignment 2\Source Code\messenger-client\obj\Debug\Messenger.csproj.CoreCompileInputs.cache
+C:\Users\lesegomat\OneDrive\Adv Dip Computer Science\SFG\Assignment 2\Source Code\messenger-client\obj\Debug\Messenger.csproj.CopyComplete
+C:\Users\lesegomat\OneDrive\Adv Dip Computer Science\SFG\Assignment 2\Source Code\messenger-client\obj\Debug\Messenger.exe
+C:\Users\lesegomat\OneDrive\Adv Dip Computer Science\SFG\Assignment 2\Source Code\messenger-client\obj\Debug\Messenger.pdb

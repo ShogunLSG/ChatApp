@@ -1,0 +1,14 @@
+C:\Users\Ampfarisaho\Development\Messenger\bin\Release\Messenger.exe.config
+C:\Users\Ampfarisaho\Development\Messenger\bin\Release\Messenger.exe
+C:\Users\Ampfarisaho\Development\Messenger\bin\Release\Messenger.pdb
+C:\Users\Ampfarisaho\Development\Messenger\bin\Release\Newtonsoft.Json.dll
+C:\Users\Ampfarisaho\Development\Messenger\bin\Release\Newtonsoft.Json.xml
+C:\Users\Ampfarisaho\Development\Messenger\obj\Release\Messenger.csproj.AssemblyReference.cache
+C:\Users\Ampfarisaho\Development\Messenger\obj\Release\Messenger.csproj.SuggestedBindingRedirects.cache
+C:\Users\Ampfarisaho\Development\Messenger\obj\Release\Messenger.MessengerForm.resources
+C:\Users\Ampfarisaho\Development\Messenger\obj\Release\Messenger.Properties.Resources.resources
+C:\Users\Ampfarisaho\Development\Messenger\obj\Release\Messenger.csproj.GenerateResource.cache
+C:\Users\Ampfarisaho\Development\Messenger\obj\Release\Messenger.csproj.CoreCompileInputs.cache
+C:\Users\Ampfarisaho\Development\Messenger\obj\Release\Messenger.csproj.CopyComplete
+C:\Users\Ampfarisaho\Development\Messenger\obj\Release\Messenger.exe
+C:\Users\Ampfarisaho\Development\Messenger\obj\Release\Messenger.pdb
